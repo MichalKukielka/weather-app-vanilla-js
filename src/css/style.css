@@ -1,0 +1,192 @@
+body {
+    background-size: cover;
+    min-width: 320px;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+}
+
+#weatherBody {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 20px;
+}
+
+.weather-data {
+    font-weight: bold;
+}
+
+#CityContainer {
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
+#date-container {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#todaysTempContainer{
+    font-size: 8em;
+}
+
+.weather-detail {
+    font-size: 22px;
+    line-height: 37px;
+}
+
+.weekday {
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.weekday-temp {
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.coord {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#search-input {
+    background: rgba(76, 82, 85, 0.4);
+    border-top: 1px solid rgba(228, 227, 227, 0.2);
+    border-bottom: 1px solid rgba(228, 227, 227, 0.2);
+    border-left: 1px solid rgba(228, 227, 227, 0.2);
+    border-right: none;
+    box-sizing: border-box;
+}
+
+#speech-button {
+    background: rgba(76, 82, 85, 0.4);
+    border: 1px solid rgba(228, 227, 227, 0.2);
+    border-top: 1px solid rgba(228, 227, 227, 0.2);
+    border-bottom: 1px solid rgba(228, 227, 227, 0.2);
+    border-right: 1px solid rgba(228, 227, 227, 0.2);
+    border-left: none;
+    box-sizing: border-box;
+}
+
+#search-input::placeholder {
+    color: #FFFFFF;
+}
+
+#search-input:focus {
+    color: #FFFFFF;
+}
+
+.search-button {
+    background: rgba(174, 181, 185, 0.5);
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+.selected{
+    background: rgba(76, 82, 85, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.border-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.border-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.border-separator {
+    border-left: 1px solid;
+}
+
+.dropdown-toggle {
+    border: 0;
+    background: rgba(174, 181, 185, 0.5);
+}
+
+.col-6 {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.map {
+    height: 320px;
+    border-radius: 20px;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.icon{
+    width: 1em;
+}
+
+#refresh-icon:hover{
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 540px) {
+    #CityContainer {
+        font-size: 32px;
+        line-height: 44px;
+        text-transform: uppercase;
+    }
+    
+    #date-container {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    #todaysTempContainer{
+        font-size: 5em;
+    }
+    
+    .weather-detail {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .weekday {
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+    
+    .weekday-temp {
+        font-weight: 600;
+        font-size: 1.8em;
+        line-height: 2em;
+        }
+    
+    .coord {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
